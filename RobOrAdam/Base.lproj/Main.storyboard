@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BHV-sc-JfZ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="jQ1-Hj-tnS">
+            <objects>
+                <viewController id="BHV-sc-JfZ" customClass="ViewController" customModule="RobOrAdam" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="j8j-bc-BC8"/>
+                        <viewControllerLayoutGuide type="bottom" id="oae-by-fOg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tEX-Kf-wFl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rob Schneider Vs. Adam Sandler" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMD-yg-Zad">
+                                <rect key="frame" x="4" y="8" width="366" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Otf-Sm-grH">
+                                <rect key="frame" x="16" y="119" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="RrS-kA-fam"/>
+                                    <constraint firstAttribute="width" constant="100" id="fbW-LX-BsS"/>
+                                </constraints>
+                                <state key="normal" image="rob"/>
+                                <connections>
+                                    <action selector="addFoodToDatabase:" destination="BHV-sc-JfZ" eventType="touchUpInside" id="tPC-PS-Pu1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aV5-QJ-eDV">
+                                <rect key="frame" x="259" y="119" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="GD3-89-tcZ"/>
+                                    <constraint firstAttribute="width" constant="100" id="Hfk-QV-Xp7"/>
+                                </constraints>
+                                <state key="normal" image="adam"/>
+                                <connections>
+                                    <action selector="addFoodToDatabase:" destination="BHV-sc-JfZ" eventType="touchUpInside" id="PJe-h3-a4Y"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rob Wins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTe-yE-t1G">
+                                <rect key="frame" x="29.5" y="227" width="73" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adam Wins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqr-Fm-M3i">
+                                <rect key="frame" x="265.5" y="227" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="O9w-bC-j8L">
+                                <rect key="frame" x="-1" y="339" width="376" height="328"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="328" id="84D-MC-BhQ"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="NzI-2T-gdM" detailTextLabel="yMA-3z-4cO" style="IBUITableViewCellStyleSubtitle" id="D8P-PH-7nO">
+                                        <rect key="frame" x="0.0" y="28" width="376" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="D8P-PH-7nO" id="XZX-2j-kSU">
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NzI-2T-gdM">
+                                                    <rect key="frame" x="15" y="5" width="33.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yMA-3z-4cO">
+                                                    <rect key="frame" x="15" y="25.5" width="44" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your History" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vO7-wE-SK9">
+                                <rect key="frame" x="16" y="298" width="145" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rock Paper Scissors " lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eBf-nD-n4J">
+                                <rect key="frame" x="72" y="51" width="231" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="oae-by-fOg" firstAttribute="top" secondItem="O9w-bC-j8L" secondAttribute="bottom" id="5KP-OI-cgC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="O9w-bC-j8L" secondAttribute="trailing" constant="-16" id="5ZB-9J-s7B"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vO7-wE-SK9" secondAttribute="trailing" constant="198" id="C20-ae-mDS"/>
+                            <constraint firstItem="gqr-Fm-M3i" firstAttribute="centerX" secondItem="aV5-QJ-eDV" secondAttribute="centerX" id="HEL-7f-nHr"/>
+                            <constraint firstItem="O9w-bC-j8L" firstAttribute="leading" secondItem="tEX-Kf-wFl" secondAttribute="leadingMargin" constant="-17" id="OeK-5b-hZI"/>
+                            <constraint firstItem="aV5-QJ-eDV" firstAttribute="top" secondItem="j8j-bc-BC8" secondAttribute="bottom" constant="99" id="RAp-kv-wqf"/>
+                            <constraint firstItem="XTe-yE-t1G" firstAttribute="top" secondItem="Otf-Sm-grH" secondAttribute="bottom" constant="8" id="WB2-pm-kCI"/>
+                            <constraint firstItem="O9w-bC-j8L" firstAttribute="top" secondItem="vO7-wE-SK9" secondAttribute="bottom" constant="12" id="fln-Ux-ata"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="vO7-wE-SK9" secondAttribute="leading" id="hYH-RE-EX9"/>
+                            <constraint firstItem="gqr-Fm-M3i" firstAttribute="top" secondItem="aV5-QJ-eDV" secondAttribute="bottom" constant="8" id="m2m-4G-Ejb"/>
+                            <constraint firstItem="XTe-yE-t1G" firstAttribute="centerX" secondItem="Otf-Sm-grH" secondAttribute="centerX" id="mRP-tq-GKR"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Otf-Sm-grH" secondAttribute="leading" id="oMy-dD-auo"/>
+                            <constraint firstItem="Otf-Sm-grH" firstAttribute="top" secondItem="j8j-bc-BC8" secondAttribute="bottom" constant="99" id="pdQ-ng-j4f"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aV5-QJ-eDV" secondAttribute="trailing" id="vFx-7j-Tv7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oBs-sK-zlA"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="O9w-bC-j8L" id="c7V-XH-y6Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8M4-tC-UwS" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="adam" width="364" height="364"/>
+        <image name="rob" width="267" height="200"/>
+    </resources>
+</document>

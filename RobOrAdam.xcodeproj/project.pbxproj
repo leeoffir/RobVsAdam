@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C3E17B12092334D00FE3875 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3E17B02092334D00FE3875 /* AppDelegate.swift */; };
+		4C3E17B32092334D00FE3875 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3E17B22092334D00FE3875 /* ViewController.swift */; };
+		4C3E17B62092334D00FE3875 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C3E17B42092334D00FE3875 /* Main.storyboard */; };
+		4C3E17B82092334E00FE3875 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C3E17B72092334E00FE3875 /* Assets.xcassets */; };
+		4C3E17BB2092334E00FE3875 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C3E17B92092334E00FE3875 /* LaunchScreen.storyboard */; };
+		4C3E17C62092334F00FE3875 /* RobOrAdamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3E17C52092334F00FE3875 /* RobOrAdamTests.swift */; };
+		4C3E17D12092334F00FE3875 /* RobOrAdamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3E17D02092334F00FE3875 /* RobOrAdamUITests.swift */; };
+		4C3E17E0209235E400FE3875 /* Datamodel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C3E17DE209235E400FE3875 /* Datamodel.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C3E17C22092334F00FE3875 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C3E17A52092334D00FE3875 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C3E17AC2092334D00FE3875;
+			remoteInfo = RobOrAdam;
+		};
+		4C3E17CD2092334F00FE3875 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C3E17A52092334D00FE3875 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C3E17AC2092334D00FE3875;
+			remoteInfo = RobOrAdam;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4C3E17AD2092334D00FE3875 /* RobOrAdam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RobOrAdam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C3E17B02092334D00FE3875 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4C3E17B22092334D00FE3875 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C3E17B52092334D00FE3875 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C3E17B72092334E00FE3875 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C3E17BA2092334E00FE3875 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4C3E17BC2092334E00FE3875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C3E17C12092334F00FE3875 /* RobOrAdamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RobOrAdamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C3E17C52092334F00FE3875 /* RobOrAdamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobOrAdamTests.swift; sourceTree = "<group>"; };
+		4C3E17C72092334F00FE3875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C3E17CC2092334F00FE3875 /* RobOrAdamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RobOrAdamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C3E17D02092334F00FE3875 /* RobOrAdamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobOrAdamUITests.swift; sourceTree = "<group>"; };
+		4C3E17D22092334F00FE3875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C3E17DF209235E400FE3875 /* Datamodel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Datamodel.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C3E17AA2092334D00FE3875 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C3E17BE2092334F00FE3875 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C3E17C92092334F00FE3875 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C3E17A42092334D00FE3875 = {
+			isa = PBXGroup;
+			children = (
+				4C3E17AF2092334D00FE3875 /* RobOrAdam */,
+				4C3E17C42092334F00FE3875 /* RobOrAdamTests */,
+				4C3E17CF2092334F00FE3875 /* RobOrAdamUITests */,
+				4C3E17AE2092334D00FE3875 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4C3E17AE2092334D00FE3875 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C3E17AD2092334D00FE3875 /* RobOrAdam.app */,
+				4C3E17C12092334F00FE3875 /* RobOrAdamTests.xctest */,
+				4C3E17CC2092334F00FE3875 /* RobOrAdamUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C3E17AF2092334D00FE3875 /* RobOrAdam */ = {
+			isa = PBXGroup;
+			children = (
+				4C3E17B02092334D00FE3875 /* AppDelegate.swift */,
+				4C3E17B22092334D00FE3875 /* ViewController.swift */,
+				4C3E17DE209235E400FE3875 /* Datamodel.xcdatamodeld */,
+				4C3E17B42092334D00FE3875 /* Main.storyboard */,
+				4C3E17B72092334E00FE3875 /* Assets.xcassets */,
+				4C3E17B92092334E00FE3875 /* LaunchScreen.storyboard */,
+				4C3E17BC2092334E00FE3875 /* Info.plist */,
+			);
+			path = RobOrAdam;
+			sourceTree = "<group>";
+		};
+		4C3E17C42092334F00FE3875 /* RobOrAdamTests */ = {
+			isa = PBXGroup;
+			children = (
+				4C3E17C52092334F00FE3875 /* RobOrAdamTests.swift */,
+				4C3E17C72092334F00FE3875 /* Info.plist */,
+			);
+			path = RobOrAdamTests;
+			sourceTree = "<group>";
+		};
+		4C3E17CF2092334F00FE3875 /* RobOrAdamUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4C3E17D02092334F00FE3875 /* RobOrAdamUITests.swift */,
+				4C3E17D22092334F00FE3875 /* Info.plist */,
+			);
+			path = RobOrAdamUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C3E17AC2092334D00FE3875 /* RobOrAdam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C3E17D52092334F00FE3875 /* Build configuration list for PBXNativeTarget "RobOrAdam" */;
+			buildPhases = (
+				4C3E17A92092334D00FE3875 /* Sources */,
+				4C3E17AA2092334D00FE3875 /* Frameworks */,
+				4C3E17AB2092334D00FE3875 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RobOrAdam;
+			productName = RobOrAdam;
+			productReference = 4C3E17AD2092334D00FE3875 /* RobOrAdam.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4C3E17C02092334F00FE3875 /* RobOrAdamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C3E17D82092334F00FE3875 /* Build configuration list for PBXNativeTarget "RobOrAdamTests" */;
+			buildPhases = (
+				4C3E17BD2092334F00FE3875 /* Sources */,
+				4C3E17BE2092334F00FE3875 /* Frameworks */,
+				4C3E17BF2092334F00FE3875 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C3E17C32092334F00FE3875 /* PBXTargetDependency */,
+			);
+			name = RobOrAdamTests;
+			productName = RobOrAdamTests;
+			productReference = 4C3E17C12092334F00FE3875 /* RobOrAdamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4C3E17CB2092334F00FE3875 /* RobOrAdamUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C3E17DB2092334F00FE3875 /* Build configuration list for PBXNativeTarget "RobOrAdamUITests" */;
+			buildPhases = (
+				4C3E17C82092334F00FE3875 /* Sources */,
+				4C3E17C92092334F00FE3875 /* Frameworks */,
+				4C3E17CA2092334F00FE3875 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C3E17CE2092334F00FE3875 /* PBXTargetDependency */,
+			);
+			name = RobOrAdamUITests;
+			productName = RobOrAdamUITests;
+			productReference = 4C3E17CC2092334F00FE3875 /* RobOrAdamUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C3E17A52092334D00FE3875 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Lee Offir";
+				TargetAttributes = {
+					4C3E17AC2092334D00FE3875 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					4C3E17C02092334F00FE3875 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 4C3E17AC2092334D00FE3875;
+					};
+					4C3E17CB2092334F00FE3875 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 4C3E17AC2092334D00FE3875;
+					};
+				};
+			};
+			buildConfigurationList = 4C3E17A82092334D00FE3875 /* Build configuration list for PBXProject "RobOrAdam" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C3E17A42092334D00FE3875;
+			productRefGroup = 4C3E17AE2092334D00FE3875 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C3E17AC2092334D00FE3875 /* RobOrAdam */,
+				4C3E17C02092334F00FE3875 /* RobOrAdamTests */,
+				4C3E17CB2092334F00FE3875 /* RobOrAdamUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C3E17AB2092334D00FE3875 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C3E17BB2092334E00FE3875 /* LaunchScreen.storyboard in Resources */,
+				4C3E17B82092334E00FE3875 /* Assets.xcassets in Resources */,
+				4C3E17B62092334D00FE3875 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C3E17BF2092334F00FE3875 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C3E17CA2092334F00FE3875 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C3E17A92092334D00FE3875 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C3E17B32092334D00FE3875 /* ViewController.swift in Sources */,
+				4C3E17E0209235E400FE3875 /* Datamodel.xcdatamodeld in Sources */,
+				4C3E17B12092334D00FE3875 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C3E17BD2092334F00FE3875 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C3E17C62092334F00FE3875 /* RobOrAdamTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C3E17C82092334F00FE3875 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C3E17D12092334F00FE3875 /* RobOrAdamUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C3E17C32092334F00FE3875 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C3E17AC2092334D00FE3875 /* RobOrAdam */;
+			targetProxy = 4C3E17C22092334F00FE3875 /* PBXContainerItemProxy */;
+		};
+		4C3E17CE2092334F00FE3875 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C3E17AC2092334D00FE3875 /* RobOrAdam */;
+			targetProxy = 4C3E17CD2092334F00FE3875 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4C3E17B42092334D00FE3875 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C3E17B52092334D00FE3875 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4C3E17B92092334E00FE3875 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C3E17BA2092334E00FE3875 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C3E17D32092334F00FE3875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4C3E17D42092334F00FE3875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C3E17D62092334F00FE3875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3QX6KLX557;
+				INFOPLIST_FILE = RobOrAdam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = leeoffir.RobOrAdam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4C3E17D72092334F00FE3875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3QX6KLX557;
+				INFOPLIST_FILE = RobOrAdam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = leeoffir.RobOrAdam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4C3E17D92092334F00FE3875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3QX6KLX557;
+				INFOPLIST_FILE = RobOrAdamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = leeoffir.RobOrAdamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RobOrAdam.app/RobOrAdam";
+			};
+			name = Debug;
+		};
+		4C3E17DA2092334F00FE3875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3QX6KLX557;
+				INFOPLIST_FILE = RobOrAdamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = leeoffir.RobOrAdamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RobOrAdam.app/RobOrAdam";
+			};
+			name = Release;
+		};
+		4C3E17DC2092334F00FE3875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3QX6KLX557;
+				INFOPLIST_FILE = RobOrAdamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = leeoffir.RobOrAdamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RobOrAdam;
+			};
+			name = Debug;
+		};
+		4C3E17DD2092334F00FE3875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3QX6KLX557;
+				INFOPLIST_FILE = RobOrAdamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = leeoffir.RobOrAdamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RobOrAdam;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C3E17A82092334D00FE3875 /* Build configuration list for PBXProject "RobOrAdam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C3E17D32092334F00FE3875 /* Debug */,
+				4C3E17D42092334F00FE3875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C3E17D52092334F00FE3875 /* Build configuration list for PBXNativeTarget "RobOrAdam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C3E17D62092334F00FE3875 /* Debug */,
+				4C3E17D72092334F00FE3875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C3E17D82092334F00FE3875 /* Build configuration list for PBXNativeTarget "RobOrAdamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C3E17D92092334F00FE3875 /* Debug */,
+				4C3E17DA2092334F00FE3875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C3E17DB2092334F00FE3875 /* Build configuration list for PBXNativeTarget "RobOrAdamUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C3E17DC2092334F00FE3875 /* Debug */,
+				4C3E17DD2092334F00FE3875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4C3E17DE209235E400FE3875 /* Datamodel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4C3E17DF209235E400FE3875 /* Datamodel.xcdatamodel */,
+			);
+			currentVersion = 4C3E17DF209235E400FE3875 /* Datamodel.xcdatamodel */;
+			path = Datamodel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4C3E17A52092334D00FE3875 /* Project object */;
+}
