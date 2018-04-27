@@ -13,7 +13,7 @@ class ViewController: UIViewController, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     
     
-    var robItems = [Rob]()
+    var items = [Rob]()
     var moc:NSManagedObjectContext!
     var appDelegate = UIApplication.shared.delegate as? AppDelegate
     
@@ -33,11 +33,11 @@ class ViewController: UIViewController, UITableViewDataSource {
     }
     
     func loadData(){
-        let robRequest:NSFetchRequest<Rob> = Rob.fetchRequest()
+        let request:NSFetchRequest<Rob> = Rob.fetchRequest()
         let sortDescriptor = NSSortDescriptor(key: "added", ascending: false)
-        robRequest.sortDescriptors = [sortDescriptor]
+        request.sortDescriptors = [sortDescriptor]
         do {
-            try robItems = moc.fetch(robRequest)
+            try items = moc.fetch(request)
             
         }catch {
             print("Could not load data")
@@ -48,13 +48,13 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     
     @IBAction func addFoodToDatabase(_ sender: UIButton) {
-        let robItem = Rob(context: moc)
-        robItem.added = NSDate() as Date
+        let item = Rob(context: moc)
+        item.added = NSDate() as Date
         
         if sender.tag == 0 {
-            robItem.type = "Rob wins!"
+            item.type = "Rob wins!"
         }else {
-            robItem.type = "Adam wins!"
+            item.type = "Adam wins!"
         }
         
         appDelegate?.saveContext()
@@ -69,18 +69,18 @@ class ViewController: UIViewController, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return robItems.count
+        return items.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
     
-        let robItem = robItems[indexPath.row]
+        let robItem = items[indexPath.row]
         
        
-        let robType = robItem.type
-        cell.textLabel?.text = robType
+        let type = robItem.type
+        cell.textLabel?.text = type
         
        
         let robDate = robItem.added as! Date
@@ -90,7 +90,7 @@ class ViewController: UIViewController, UITableViewDataSource {
         cell.detailTextLabel?.text = dateFormatter.string(from: robDate)
         
         
-        if robType == "Rob wins!" {
+        if type == "Rob wins!" {
             cell.imageView?.image = UIImage(named: "rob")
         }else{
             cell.imageView?.image = UIImage(named: "adam")
